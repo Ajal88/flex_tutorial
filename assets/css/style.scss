@@ -1,0 +1,12 @@
+---
+---
+
+@import "{{ site.theme }}";
+@@font-face {
+  font-family: 'droid';
+  src: url(https://fontlibrary.org/face/droid-persian-naskh);
+}
+p,h1,h2,h3,h4,h5,h6 {
+  font-family: 'droid','serif';
+  direction: rtl;
+}
