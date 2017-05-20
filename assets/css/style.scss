@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
 @font-face {
   font-family: 'XBZarRegular';
   src: url(https://fontlibrary.org/face/xb-zar);
@@ -9,14 +10,14 @@
 p {
   font-family: 'XBZarRegular',serif;
   direction: rtl;
-  font-size : 15 px;
+  font-size : 16 px;
 }
-h1,h2,h3,h5,h6 {
+h1, h2, h3, h5, h6 {
   font-family: 'XBZarRegular',serif;
   direction: rtl;
 }
 h4 {
   font-family: 'XBZarRegular',serif;
-  font-size : 18 px;
+  font-size : 20 px;
   font-style: bold;
 }
