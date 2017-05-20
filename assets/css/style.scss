@@ -7,15 +7,16 @@
   src: url(https://fontlibrary.org/face/xb-zar);
 }
 p {
-  font-family: 'zar','serif';
+  font-family: "zar",serif;
   direction: rtl;
-  font-size : 2 rem;
+  font-size : 15 px;
 }
 h1,h2,h3,h5,h6 {
-  font-family: 'zar','serif';
+  font-family: "zar",serif;
   direction: rtl;
 }
 h4 {
-  font-family: 'zar','serif';
-  font-size : 3 rem;
+  font-family: "zar",serif;
+  font-size : 18 px;
+  font-style: bold;
 }
