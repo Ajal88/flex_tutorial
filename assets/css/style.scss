@@ -1,22 +1,24 @@
 ---
 ---
 
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/xb-zar" type="text/css"/>
+
 @import "{{ site.theme }}";
 @font-face {
-  font-family: 'zar';
+  font-family: 'XBZarRegular';
   src: url(https://fontlibrary.org/face/xb-zar);
 }
 p {
-  font-family: "zar",serif;
+  font-family: "XBZarRegular",serif;
   direction: rtl;
   font-size : 15 px;
 }
 h1,h2,h3,h5,h6 {
-  font-family: "zar",serif;
+  font-family: "XBZarRegular",serif;
   direction: rtl;
 }
 h4 {
-  font-family: "zar",serif;
+  font-family: "XBZarRegular",serif;
   font-size : 18 px;
   font-style: bold;
 }
