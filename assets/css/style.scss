@@ -11,7 +11,11 @@ p {
   direction: rtl;
   font-size : 2 rem;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'droid','serif';
+h1,h2,h3,h5,h6 {
+  font-family: 'zar','serif';
   direction: rtl;
+}
+h4 {
+  font-family: 'zar','serif';
+  font-size : 3 rem;
 }
