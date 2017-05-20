@@ -1,37 +1,93 @@
-## Welcome to GitHub Pages
+## مقدمه
 
-You can use the [editor on GitHub](https://github.com/Ajal88/flex_tutorial/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Flexible Box یا همان Flexbox به عنوان جایگزینی برای Floats برای تعریف و پیادەسازی ظاهر کلی صفحات وب معرفی شد. البته باید این را در نظر داشت که Float فقط توانایی جابجایی افقی جعبەها را به ما میدهد اما Flexbox کنترل کاملی را برروی سایز، جهت، نحوەی قرارگیری و ترتیب جعبه ها به ما میدهد.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![alt text](image/1.png "شکل ١. Flexbox")
 
-### Markdown
+در ابتدا هدفی که Float در پی پیادەسازی آن بود، ایجاد قابلیتی برای جابجایی عکس در متن و ایجاد قالبی همچون مجله بود و به همین دلیل برای پیاده سازی ظاهر صفحەی سایت محدودیتهای زیادی را به کاربر تحمیل میکند و برای هرکاری تقریبا نیاز به دانستن ترفندی خاص برای رسیدن به ظاهر دلخواه است.
+البته باید به این نکته دقت کرد که مرورگرهای قدیمیتر از Flexbox پشتیبانی نمیکنند و Float هنوز
+برای چیدن جعبەها در کنار هم برای آن مرورگرها و همچنین برای قرارگیری عکس در میان متن در مرورگرهای امروزی استفاده میشود. برای مثال IE از نسخه ١١ از به طور محدود از این قابلیت پشتیبانی میکند.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## چگونه از Flex استفاده کنیم
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+Flexbox ابزارهای بسیار زیادی را برای چینش جعبەها و ساختن ظاهرکلی یک صفحه وب در اختیار ما قرار میدهد و در مقایسه با Float در یک نگاه متوجه این خواهید شد که برای ایجاد یک چینش و ساخت یک صفحەی وب Flexbox راەحلی بسیار تمیزتر، آسانتر و واضحتر خواهد بود، حال در این قسمت به توضیح مختصری از این ویژگیها و همچنین نحوەی پیادەسازی آنها میپردازیم.
+برای شروعکافی استکه نگەدارندەای تعریفکنید و در فایل css مرتبط با آن مقدار display این نگەدارنده را برابر با flex قرار دهید تا محتویات داخل آن از این به بعد Flexbox شوند.
+از این به بعد دربارەی هرکدام از ویژگیهاییکه میتواند به نگەدارنده و یا به شی داخل آن منتسب شود￼ جداگانه پرداخت میشود.
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### ویژگیهای نگەدارنده :
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ajal88/flex_tutorial/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* #### : justify-content
+	*  center
+	*  flex-start 
+	*  flex-end
+	*  space-around
+	*  space-between
 
-### Support or Contact
+این ویژگی میتواند مقادیر بالا را اختیار کند. در شکل ٢ نحوەی قرارگیری محتوایات داخل Flexbox با توجه به اتخاذ هر یک از مقادیر بالا آمده است.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![alt text](image/2.png "شکل ٢. مقادیر justify-content")
+
+* #### : align-items
+	*  center
+	*  flex-start (top) 
+	*  flex-end (bottom)
+	*  stretch
+	*  baseline
+
+align-items مقادیر آورده شده در بالا را قبول میکند و در شکل ٣ تغییرات محتوای داخل Flexbox با توجه به مقادیر فوق را مشاهده میکنید.
+
+![alt text](image/3.png "شکل ٣. تاثیر مقادیر align-items")
+
+به طور کلی دو ویژگی بالا اولی تغییرات افقی و دومی تغییرات عمودی محتویات داخل Flexbox را برعهده دارند.
+
+![alt text](image/4.png "شکل ۴. تغییرات اعمال شده توسط justify-content و align-items")
+
+از دیگر مزایای این قابلیت میتوان به بستەبندی خودکار اشاره کرد که این توانایی را به صفحەی وب شما میدهدکه محتوا را با توجه به اندازه صفحه ردیفبندی شده، نمایش دهد. در زیر به توضیح مقادیریکه توسط این ویژگیگرفته میشود میپردازیم. برای درک بهتر شکل ۵ را ببینید.
+
+* #### : flex wrap
+	*  wrap
+	*  no-wrap
+
+![alt text](image/5.png "شکل ۵. flex-wrap")
+
+* #### : flex-direction
+	*  row
+	*  column
+	*  row-reverse
+	*  column-reverse
+	
+برای توضیح این ویژگی به علت سادگی و واضح بودن به شکل ۶ و ٧ اکتفا میکنیم.
+
+![alt text](image/6.png "شکل ۶. جهت محتوا در Flexbox")
+
+![alt text](image/7.png "شکل ٧. جهت محتوا در Flexbox و حالت معکوس آن")
+
+البته باید در نظر داشت که همانند شکل ٨ justify-content و align-items در این دو جهت تغییر￼ خواهد کرد.
+
+![alt text](image/8.png "شکل ٨. تاثیرات جهت درکلیت قالب")
+
+حال به ویژگیهای محتوای داخل یک نگەدارنده از جنس Flexbox میپردازیم.
+
+### ویژگیهای محتوای داخل یک Flexbox:
+
+* #### : order
+این ویژگی این امکان را میدهد تا هر عضوی از محتوا را دارای ترتیب مشخصی کند که بتواند
+قبل یا بعد یک شی مشخص که اردر متفاوتی دارد قرار بگیرید. به عنوان ورودی این ویژگی عدد میگیرد.
+
+* #### : align-self 
+میتوان تمام ویژگیهای align-items کاملا و بەطور اختصاصی برای یک شی از
+محتوا اجراکرد. 
+
+* #### : flex
+این قابلیت به اشیای محتوا این اجازه را میدهد که عرضی مرتجع و انعطافپذیر داشته باشند.
+این قابلیت توانایی گرفتن مقادیری از جنس عدد یا عبارت initial را دارد. initial عرض ثابتی را به هر  شی اختصاص میدهد ولی اعداد این مفهوم را میرسانند که هرکدام از اشیای درون نگەدارنده چه مقدار عرض از عرضکل و به چه نسبتی اخذکنند.
+
+* ####
+
+## نتیجه‌گیری
+
+برای جمعبندی میتوانگفتکهکارهاییکه با استفاده از این قابلیت میتوان انجام داد شاید با ابزارهای دیگر که از قبل در اختیار توسعه دهندگان بود توانایی انجام داشته باشند ولی این قابلیت کدهای مارا بسیار کوتاەتر، تمیزتر و قابلفهمتر میکند اما در اصل طراحی تغییری ایجاد نمیکند و تنها دغدغەهای شما را در طراحیکم میکند.
+	
+
