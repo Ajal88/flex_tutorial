@@ -7,6 +7,11 @@
   font-family: 'XBZarRegular';
   src: url(https://fontlibrary.org/face/xb-zar);
 }
+
+location ~* \.(eot|ttf|woff|svg)$ {
+    add_header Access-Control-Allow-Origin *;
+}
+
 p {
   font-family: 'XBZarRegular',serif;
   direction: rtl;
