@@ -4,23 +4,23 @@
 @import "{{ site.theme }}";
 
 @font-face {
-  font-family: 'XBZarRegular';
+  font-family: 'XBZar';
   src: url(https://fontlibrary.org/face/xb-zar);
 }
 
 p {
-  font-family: 'XBZarRegular',serif;
+  font-family: 'XBZar',serif;
   direction: rtl;
   font-size : 18 px;
 }
 
 h1, h2, h3, h5, h6 {
-  font-family: 'XBZarRegular',serif;
+  font-family: 'XBZar',serif;
   direction: rtl;
 }
 
 h4 {
-  font-family: 'XBZarRegular',serif;
+  font-family: 'XBZar',serif;
   font-size : 20 px;
   font-style: bold;
 }
