@@ -7,7 +7,7 @@
   font-family: 'XBZar';
   src: url(https://fontlibrary.org/face/xb-zar);
 }
-h1, h2, h3, h4{
+h1, h2, h3{
   direction: rtl;
   font-family: 'XBZar', serif;
 }
@@ -17,38 +17,11 @@ p{
   font-style: normal;
   direction: rtl;
 }
-
-/*
----
----
-
-@import "{{ site.theme }}";
-
-@font-face {
-  font-family: 'XBZar';
-  src: url(https://fontlibrary.org/face/xb-zar);
-}
-
-p {
-  font-family: 'XBZar',serif;
-  direction: rtl;
-  font-size : 18 px;
-}
-
-h1, h2, h3, h5, h6 {
-  font-family: 'XBZar',serif;
-  direction: rtl;
-}
-
 h4 {
   font-family: 'XBZar',serif;
-  font-size : 20 px;
   font-style: bold;
 }
-
 li {
   font-family: 'XBZar',serif;
-  font-size : 18 px;
   font-style: bold;
 }
-*/
